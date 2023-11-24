@@ -1,0 +1,29 @@
+.form__input-slider {
+    -webkit-appearance: none;
+    width: 310px;
+    height: 1px;
+    background-color: transparent;
+    outline: none;
+    align-self: center;
+    z-index: 2;
+    transition: .1s;
+}
+
+.form__input-slider:hover {
+    opacity: .9;
+}
+
+.form__input-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #B5A08D;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #B5A08D;
+    box-shadow: 1px 1px 1px #DCDCDC, 0px 0px 1px #DCDCDC;
+}
+
+.form__input-slider:not(:first-child) {
+  margin-top: -1px;
+}

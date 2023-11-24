@@ -1,0 +1,7 @@
+.form__vertical-line {
+    height: 414px;
+    position: absolute;
+    left: 380px;
+    border-left: 1px solid #DCDCDC;
+    top: 30px;
+}

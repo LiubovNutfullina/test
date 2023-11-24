@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ипотечный калькулятор</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">Ипотечный калькулятор</h1>
+    </header>
+    <main class="main">
+        <section class="content">
+            <h2 class="content__title">Недвижимость</h2>
+                <form class="forms" action="#">
+                    <div class="form">
+                        <div class="form__item">
+                            <h2 class="form__title">Стоимость недвижимости</h2>
+                            <div class="form__inputs">
+                                <input 
+                                    class="form__input"
+                                    id="input1"
+                                    name="#"
+                                    minlength="5"
+                                    maxlength="8"
+                                    value="3000000"
+                                >
+                                <input
+                                    class="form__input-slider"
+                                    type="range" 
+                                    name="property_value" 
+                                    id="property_value"
+                                    step="500" 
+                                    min="20000" 
+                                    max="200000"
+                                    value="30000"
+                                >
+                                <output class="form__output" id="#" for="property_value">₽</output>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <h2 class="form__title">Первоначальный взнос</h2>
+                            <div class="form__inputs">
+                                <input 
+                                    class="form__input"
+                                    id="input2"
+                                    name="#"
+                                    minlength="5"
+                                    maxlength="8"
+                                    value="500000"
+                                >
+                                <input
+                                    class="form__input-slider"
+                                    type="range" 
+                                    name="deposit" 
+                                    id="deposit"
+                                    step="0" 
+                                    min="200000" 
+                                    max="1500000"
+                                    value="500000"
+                                >
+                                <output class="form__output" id="#" for="deposit">₽</output>
+                            </div>
+                            <ul class="switcher">
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="deposit"
+                                        value="0"
+                                        id="radio1"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio1">0%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="deposit"
+                                        value="10"
+                                        id="radio2"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio2">10%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="deposit"
+                                        value="15"
+                                        id="radio3"
+                                        class="switcher__input"
+                                        checked="checked"
+                                    >
+                                    <label class="switcher__label" for="radio3">15%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="deposit"
+                                        value="20"
+                                        id="radio4"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio4">20%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="deposit"
+                                        value="25"
+                                        id="radio5"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio5">25%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="deposit"
+                                        value="30"
+                                        id="radio6"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio6">30%</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form__item">
+                            <h2 class="form__title">Срок кредита</h2>
+                            <div class="form__inputs">
+                                <input 
+                                    class="form__input"
+                                    id="input3"
+                                    name="#"
+                                    minlength="1"
+                                    maxlength="2"
+                                    value="20"
+                                >
+                                <input
+                                    class="form__input-slider"
+                                    type="range" 
+                                    name="date" 
+                                    id="date"
+                                    step="1" 
+                                    min="1" 
+                                    max="30"
+                                    value="20"
+                                >
+                                <output class="form__output" id="#" for="date">Лет</output>
+                            </div>
+                            <ul class="switcher">
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="date"
+                                        value="5"
+                                        id="radio7"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio7">5 лет</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="date"
+                                        value="10"
+                                        id="radio8"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio8">10 лет</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="date"
+                                        value="15"
+                                        id="radio9"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio9">15 лет</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="date"
+                                        value="20"
+                                        id="radio10"
+                                        class="switcher__input"
+                                        checked="checked"
+                                    >
+                                    <label class="switcher__label" for="radio10">20 лет</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form__item">
+                            <h2 class="form__title">Процентная ставка</h2>
+                            <div class="form__inputs">
+                                <input 
+                                    class="form__input"
+                                    id="input4"
+                                    name="#"
+                                    minlength="1"
+                                    maxlength="4"
+                                    value="7.3"
+                                >
+                                <input
+                                    class="form__input-slider"
+                                    type="range" 
+                                    name="percent" 
+                                    id="percent"
+                                    step="0.1" 
+                                    min="0.1" 
+                                    max="70"
+                                    value="7.3"
+                                    selector
+                                >
+                                <output class="form__output" id="#" for="percent">%</output>
+                            </div>
+                            <ul class="switcher">
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="percent"
+                                        value="0,1"
+                                        id="radio11"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio11">0,1%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="percent"
+                                        value="4,5"
+                                        id="radio12"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio12">4,5%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="percent"
+                                        value="6"
+                                        id="radio13"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio13">6%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="percent"
+                                        value="7"
+                                        id="radio14"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio14">7%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="percent"
+                                        value="7,5"
+                                        id="radio15"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio15">7,5%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="percent"
+                                        value="9,1"
+                                        id="radio16"
+                                        class="switcher__input"
+                                        checked="checked"
+                                    >
+                                    <label class="switcher__label" for="radio16">9,1%</label>
+                                </li>
+                                <li class="switcher__item">
+                                    <input
+                                        type="radio"
+                                        name="percent"
+                                        value="10"
+                                        id="radio17"
+                                        class="switcher__input"
+                                    >
+                                    <label class="switcher__label" for="radio17">10%</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form__vertical-line"></div>
+                    <div class="form form_right">
+                        <div class="payment">
+                            <span class="payment__number">19 835 ₽</span>
+                            <p class="payment__text">Ваш ежемесячный платеж</p>
+                            <button class="payment__button" type="submit" aria-label="Скачать"></button>
+                        </div>
+                        <div class="calculations">
+                            <ul class="calculations__container">
+                                <li class="calculations__text">Кредит</li>
+                                <li class="calculations__numbers">2 500 000 ₽</li>
+                            </ul>
+                            <ul class="calculations__container">
+                                <li class="calculations__text">Проценты</li>
+                                <li class="calculations__numbers">2 260 450 ₽</li>
+                            </ul>
+                            <ul class="calculations__container">
+                                <li class="calculations__text">Проценты + кредит</li>
+                                <li class="calculations__numbers">4 760 450 ₽</li>
+                            </ul>
+                            <ul class="calculations__container">
+                                <li class="calculations__text">Необходимый доход</li>
+                                <li class="calculations__numbers">33 059 ₽</li>
+                            </ul>
+                        </div>
+                        <button 
+                            class="submit__button"
+                            type="submit"
+                            aria-label="Вывести график"
+                        >Вывести график платежей</button>
+                    </div>
+                </form>
+            <div class="content__buttons">
+                <button 
+                    class="content__button"
+                    type="button"
+                    aria-label="Подать заявку"
+                >Подать заявку онлайн</button> 
+                <!-- не очень понятно использовать кнопку или ссылку, по макету кажется что кнопка, поэтому предполагаю, что жмакнув на нее будет открываться форма и ничего больше не делаю -->
+                <a href="https://mail.ru/" class="content__link" target="_blank">Переслать себе на E-mail</a>
+            </div>
+        </section>
+        <section class="content">
+            <h2 class="content__title">График платежей</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>НОМЕР ПЛАТЕЖА</th>
+                        <th>ДАТА ПЛАТЕЖА</th>
+                        <th>ОСТАТОК ДОЛГА</th>
+                        <th>В ПОГАШЕНИЕ ДОЛГА</th>
+                        <th>В ПОГАШЕНИЕ ПРОЦЕНТОВ</th>
+                        <th>ПЛАТЕЖ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th>1</th>
+                    <th>19.11.2023</th>
+                    <th>100000</th>
+                    <th>0</th>
+                    <th>416,67</th>
+                    <th>416,67</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th>19.12.2023</th>
+                        <th>91096,91</th>
+                        <th>8903,09</th>
+                        <th>416,67</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <th>19.01.2024</th>
+                        <th>82156,72</th>
+                        <th>8940,19</th>
+                        <th>379,57</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <th>19.02.2024</th>
+                        <th>73179,28</th>
+                        <th>8977,44</th>
+                        <th>342,32</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <th>19.03.2024</th>
+                        <th>64164,43</th>
+                        <th>9014,85</th>
+                        <th>304,91</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <th>19.04.2024</th>
+                        <th>55112,02</th>
+                        <th>9052,41</th>
+                        <th>267,35</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <th>19.05.2024</th>
+                        <th>46021,9</th>
+                        <th>9090,13</th>
+                        <th>229,63</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <th>19.06.2024</th>
+                        <th>36893,89</th>
+                        <th>9128</th>
+                        <th>191,76</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <th>19.07.2024</th>
+                        <th>27727,86</th>
+                        <th>9166,04</th>
+                        <th>153,72</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <th>19.08.2024</th>
+                        <th>18523,63</th>
+                        <th>9204,23</th>
+                        <th>115,53</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <th>19.09.2024</th>
+                        <th>9281,05</th>
+                        <th>9242,58</th>
+                        <th>77,18</th>
+                        <th>9319,76</th>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <th>19.10.2024</th>
+                        <th>0</th>
+                        <th>9281,05</th>
+                        <th>38,67</th>
+                        <th>9319,72</th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>ВСЕГО</th>
+                        <th></th>
+                        <th></th>
+                        <th>100000</th>
+                        <th>2933,99</th>
+                        <th>102933,99</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

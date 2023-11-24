@@ -1,0 +1,21 @@
+.switcher__label {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 2px;
+    background-color: rgba(144, 144, 154, 0.20);
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.switcher__label:hover {
+    background-color: rgba(144, 144, 154, 0.6);
+}
+
+.switcher__label:checked {
+    background-color: rgba(144, 144, 154);
+}

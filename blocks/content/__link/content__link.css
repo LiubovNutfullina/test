@@ -1,0 +1,19 @@
+.content__link {
+    font-family: 'Montserrat', sans-serif;
+    width: 175px;
+    height: 16px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #B5A08D;
+    padding-top: 16px;
+    transition: opacity .5s linear;
+}
+
+.content__link:hover {
+    opacity: .5;
+}

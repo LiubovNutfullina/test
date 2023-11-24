@@ -1,0 +1,18 @@
+.calculations__text {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.5em;
+    margin: 0;
+    font-size: 16px;
+    flex-grow: 1;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.calculations__text::before {
+    content: '';
+    border-bottom: 1px dashed rgba(144, 144, 154, 1);
+    flex-grow: 1;
+    order: 2;
+    margin: 0 5px;
+}

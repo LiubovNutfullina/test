@@ -1,0 +1,9 @@
+.page {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 10% 17% 410px 210px;
+    max-width: 100%;
+}

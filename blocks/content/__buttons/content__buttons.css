@@ -1,0 +1,6 @@
+.content__buttons {
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    width: fit-content;
+}

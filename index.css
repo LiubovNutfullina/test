@@ -1,0 +1,48 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+@import url(./blocks/page/page.css);
+
+
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__title/header__title.css);
+
+@import url(./blocks/main/main.css);
+
+@import url(./blocks/content/content.css);
+@import url(./blocks/content/__title/content__title.css);
+@import url(./blocks/content/__buttons/content__buttons.css);
+@import url(./blocks/content/__button/content__button.css);
+@import url(./blocks/content/__link/content__link.css);
+
+@import url(./blocks/forms/forms.css);
+
+@import url(./blocks/form/form.css);
+@import url(./blocks/form/_right/form_right.css);
+@import url(./blocks/form/__item/form__item.css);
+@import url(./blocks/form/__title/form__title.css);
+@import url(./blocks/form/__inputs/form__inputs.css);
+@import url(./blocks/form/__input/form__input.css);
+@import url(./blocks/form/__input-slaider/form__input-slider.css);
+@import url(./blocks/form/__output/form__output.css);
+@import url(./blocks/form/__vertical-line/form__vertical-line.css);
+
+@import url(./blocks/payment/paiment.css);
+@import url(./blocks/payment/__text/payment__text.css);
+@import url(./blocks/payment/__number/payment__number.css);
+@import url(./blocks/payment/__button/payment__button.css);
+
+
+@import url(./blocks/switcher/switcher.css);
+@import url(./blocks/switcher/__item/switcher__item.css);
+@import url(./blocks/switcher/__input/swither__input.css);
+@import url(./blocks/switcher/__label/switcher__label.css);
+
+@import url(./blocks/calculations/calculations.css);
+@import url(./blocks/calculations/__container/calculations_container.css);
+@import url(./blocks/calculations/__numbers/calculations__numbers.css);
+@import url(./blocks/calculations/__text/calculations__text.css);
+
+@import url(./blocks/submit/__button/submit__button.css);
+
+@import url(./blocks/table/table.css);

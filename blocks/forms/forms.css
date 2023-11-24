@@ -1,0 +1,11 @@
+.forms {
+    display: flex;
+    flex-direction: column;
+    width: 749px;
+    height: 474px;
+    position: relative;
+    border-radius: 4px;
+    background-color: rgba(244, 244, 245, 1);
+    border: 1px solid #90909A;
+    margin-top: 10px;
+}

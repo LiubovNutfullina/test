@@ -1,0 +1,12 @@
+.payment__text {
+    font-family: 'Montserrat', sans-serif;
+    width: 130px;
+    height: 30px;
+    font-size: 12px;
+    color: black;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    margin: 0 34px 0 0;
+    align-self: center;
+}
